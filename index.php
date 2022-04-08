@@ -87,11 +87,11 @@
     <div class="four">
         <h1>Snack number 4</h1>
         <?php 
-        $txt = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, asperiores. Ex velit, explicabo adipisci sequi. enim officia alias a id doloremque facere provident quibusdam. Illum iusto natus consequuntur accusantium dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quas dolorem odio maxime quis ut ipsa facere at quos illum. maiores veniam atque reiciendis porro et eum consectetur sunt doloremque!';
+        $txt = 'Lorem ipsum dolor sit amet consectetur adipisicing elit, Numquam, asperiores, Ex velit, explicabo adipisci sequi, enim officia alias a id doloremque facere provident quibusdam, Illum iusto natus consequuntur accusantium dolorem, Lorem ipsum dolor sit amet consectetur adipisicing elit, Incidunt quas dolorem odio maxime quis ut ipsa facere at quos illum, maiores veniam atque reiciendis porro et eum consectetur sunt doloremque!';
 
         $txt_explode = explode('.', $txt);
         for ($i=0; $i < count($txt_explode) ; $i++) { 
-            echo $txt_explode[$i];
+            echo $txt_explode[$i] . '.';
         }
         
         ?>
