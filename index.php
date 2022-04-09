@@ -56,12 +56,27 @@
     <!-- SNACKE NUMBER 2 -->
     <div class="two">
         <h1>Snack number 2</h1>
-        <?php ?>
+        <?php
+            if (isset($_GET['name-user']) && $_GET ['email-user'] && $_GET['age-user']) {
+               if((strlen($_GET['name-user']) > 3) && (strpos($_GET['email-user'], '@')) && (strpos($_GET['email-user'], '.', -4)) && (is_numeric($_GET['age-user']))){
+                   echo 'Login successful';
+                } else {
+                   echo 'Access denied';
+                }
+            }
+        ?>
 
-        <form action="">
-            <label for="email">Enter your email</label>
-            <input type="email">
-            <button>Done</button>
+        <form action="" method="GET">
+            <label for="name-user">Enter your name</label>
+            <input type="text" id="name-user">
+
+            <label for="email-user">Enter your email</label>
+            <input type="email" id="email-user">
+
+            <label for="age-user">Enter your age</label>
+            <input type="number" id="age-user">
+
+            <button>Login</button>
         </form>
     </div>
 
