@@ -51,17 +51,15 @@
                 ]
             ];
 
-            for ($i = 0; $i < count($arr_game); $i++) { 
-                $home_squad = $arr_game[$i]['home']['name'];
-                $home_out = $arr_game[$i]['out']['name'];
-                $score_home = $arr_game[$i]['home']['score'];
-                $score_out = $arr_game[$i]['out']['score'];
+            for ($i = 0; $i < count($arr_game); $i++) { ?>
+                <span><?= $arr_game[$i]['home']['name'] ?> - </span>
+                <span><?= $arr_game[$i]['out']['name'] ?> | </span>
+                <span><?= $arr_game[$i]['home']['score'] ?> - </span>
+                <span><?= $arr_game[$i]['out']['score'] ?></span>
+                <br>
+                <?php
             }
         ?>
-        <span><?= $home_squad ?> - </span>
-        <span><?= $home_out ?> | </span>
-        <span><?= $score_home ?></span>
-        <span><?= $score_out ?></span>
     </div>
 
 
